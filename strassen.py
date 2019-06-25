@@ -272,7 +272,13 @@ def main():
 
 	output_matrix = strassen(matrix1, matrix1_index, matrix2, output_matrix)
 
-	#TODO write the result in the output file.
+	output_file.write("16113134\n")
+	output_file.write(str(output_matrix.base_rows) + " " + str(output_matrix.base_columns) + "\n")
+	for i in range(output_matrix.base_rows):
+		for j in range(output_matrix.base_columns):
+			output_file.write(str(output_matrix.elements[i][j]) + " ")
+		output_file.write("\n")
 
+		
 if __name__ == '__main__':
 	main()
