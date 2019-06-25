@@ -278,7 +278,7 @@ def main():
 		for j in range(output_matrix.base_columns):
 			output_file.write(str(output_matrix.elements[i][j]) + " ")
 		output_file.write("\n")
-
+	exit(input_file, output_file)
 		
 if __name__ == '__main__':
 	main()
